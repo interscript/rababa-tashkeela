@@ -1,0 +1,58 @@
+= Tashkeela dataset as used by Rababa
+
+NOTE: This is a copy of the "Tashkeela processed" dataset hosted
+on https://sourceforge.net/projects/tashkeela-processed/[SourceForge]
+and 
+https://www.kaggle.com/hamzaabbad/tashkeela-processed-fully-diacritized-arabic-text[Kaggle].
+It is provided on GitHub for unencumbered access.
+
+== Purpose
+
+This is the Tashkeela dataset used for training
+https://github.com/interscript/rababa[Rababa].
+
+== Original description by Hamza Abbad
+
+A version of the Tashkeela Arabic diacritized text dataset cleaned from the
+non-Arabic content and the undiacritized text, then divided into training,
+development, and testing sets.
+
+The cleaning process includes removing the XML tags and strange symbols, as
+well as fixing diacritics errors. After that, the tokenization is performed
+while focusing on the extraction of the Arabic words. The result is a
+space-separated tokens file, where the words and the numbers are separated, but
+not the sequences of punctuation (ie, an ending parenthesis followed by a dot).
+The sentence segmentation is done at usual punctuations such as dots, commas,
+interrogation/exclamation marks, and line end as well.
+
+The partition process is done by shuffling groups of sentences then dividing
+each group into three parts (Train/Val/Test) and storing them in individual
+files.
+
+Features:
+
+* Raw fully-diacritized Arabic texts.
+* Over 3 million sentences with different number of words.
+* Mostly Classical Arabic.
+* Space separated tokens.
+* 90% training , 5% validation and 5% testing data.
+
+
+== License
+
+This dataset is offered via GPLv2 as per the original datasets.
+
+== Credits
+
+* Taha Zerouki, is the author of the original Tashkeela dataset for his search
+and collection of the diacritized Arabic content from serval websites and
+combining them in a single public dataset.  The original dataset is available
+on https://sourceforge.net/projects/tashkeela/[SourceForge].
+
+* Hamza Abbad created the "Tashkeela processed" dataset which cleans up the
+original dataset.  Including cleanups by removing non-Arabic content and the
+undiacritized text, then divided into training, development, and testing sets.
+This dataset is available on
+https://sourceforge.net/projects/tashkeela-processed/[SourceForge] and
+https://www.kaggle.com/hamzaabbad/tashkeela-processed-fully-diacritized-arabic-text[Kaggle].
+
